@@ -29,51 +29,45 @@
         <section class="filter">
           <h2 class="visible-hidden">Фильтр готовых шаблонов</h2>
           <form class="filter__form">
-            <ul class="filter__list">
-              <li class="filter__item">
-                <span class="filter__title">Стоимость</span>
-                <!-- и тут будет позднее -->
-              </li>
-              <li class="filter__item">
-                <span class="filter__title">Сетка</span>
-                <!-- и тут будет позднее -->
-              </li>
-              <li class="filter__item">
-                <span class="filter__title">Особенности</span>
-                <!-- и тут будет позднее -->
-              </li>
-            </ul>
+            <fieldset class="filter__item">
+              <legend>Стоимость:</legend>
+              <!-- и тут будет позднее -->
+            </fieldset>
+            <fieldset class="filter__item">
+              <legend>Сетка:</legend>
+              <!-- и тут будет позднее -->
+            </fieldset>
+            <fieldset class="filter__item">
+              <legend>Особенности:</legend>
+              <!-- и тут будет позднее -->
+            </fieldset>
             <button class="btn filter__btn" type="submit">Показать</button>
           </form>
         </section>
         <div class="sort">
           <h2 class="visible-hidden">Сортировака готовых шаблонов</h2>
-          <span class="sort__title">Сортировать:</span>
+          <b class="sort__title">Сортировать:</b>
           <ul class="sort__list">
-            <li class="sort__item"><a class="sort__link" href="#">По цене</a></li>
-            <li class="sort__item"><a class="sort__link" href="#">По типу</a></li>
-            <li class="sort__item"><a class="sort__link" href="#">По названию</a></li>
+            <li class="sort__item"><a class="sort__link" href="#" title="По цене">По цене</a></li>
+            <li class="sort__item"><a class="sort__link" href="#" title="По типу">По типу</a></li>
+            <li class="sort__item"><a class="sort__link" href="#" title="По названию">По названию</a></li>
           </ul>
           <ul class="sort-buttons">
-            <li class="sort-buttons__item sort-buttons__item--desc">Сортировать по убыванию</li>
-            <li class="sort-buttons__item sort-buttons__item--asc">Сортировать по возрастанию</li>
+            <li class="sort-buttons__item sort-buttons__item--desc"><a class="sort-buttons__link" href="#" title="Сортировать по убыванию">Сортировать по убыванию</a></li>
+            <li class="sort-buttons__item sort-buttons__item--asc"><a class="sort-buttons__link" href="#" title="Сортировать по возрастанию">Сортировать по возрастанию</a></li>
           </ul>
         </div>
         <section class="products">
           <ul class="products__list">
             <li class="products__item">
-              <div class="products-border">
-                <span class="products-border__item"></span>
-                <span class="products-border__item"></span>
-                <span class="products-border__item"></span>
-              </div>
-              <img class="products__img" src="img/sedona.jpg" width="" height="" alt=""/>
+              <div class="products__border"></div>
+              <img class="products__img" src="img/sedona.jpg" width="" height="" alt="Sedona"/>
               <div class="products__desc">
                 <h2 class="products__title">
-                    <a class="products__link" href="#" title="Sedona">Sedona</a>
+                  <a class="products__link" href="#" title="Sedona">Sedona</a>
                 </h2>
                 <p class="products__text">Информационный сайт для туристов</p>
-                <a class="btn products__btn" href="#">9 900 руб.</a>
+                <a class="btn products__btn" href="#" title="Цена 9 900 руб.">9 900 руб.</a>
               </div>
             </li>
             <!-- + еще таких 5 элементов списка -->
@@ -81,7 +75,6 @@
         </section>
         <div class="pagination">
           <ul class="pagination__list">
-            <li class="pagination__item"><a class="visible-hidden" title="Предыдущая страница">Предыдущая</a></li>
             <li class="pagination__item"><a class="pagination__link pagination__link--active" href="#" title="1 страница">1</a></li>
             <li class="pagination__item"><a class="pagination__link" href="#" title="2 страница">2</a></li>
             <li class="pagination__item"><a class="pagination__link" href="#" title="3 страница">3</a></li>
@@ -108,8 +101,8 @@
           <li class="social__item"><a class="social__link social__link--instagram" href="#">Instagram</a></li>
         </ul>
         <p class="footer-slogan">
-          <b class="footer-slogan__title">Давайте дружить, это выгодно!</b><br>
-          <span class="footer-slogan__text">Скидка 10% для друзей из социальных сетей.</span>
+          <b class="footer-slogan__title">Давайте дружить, это выгодно!</b>
+          <p class="footer-slogan__text">Скидка 10% для друзей из социальных сетей.</p>
         </p>
       </div>
     </footer>
