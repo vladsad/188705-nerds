@@ -30,16 +30,58 @@
           <h2 class="visible-hidden">Фильтр готовых шаблонов</h2>
           <form class="filter__form">
             <fieldset class="filter__fieldset">
-              <legend>Стоимость:</legend>
-              <!-- и тут будет позднее -->
+              <legend class="filter__title">Стоимость:</legend>
+              <!-- тут двойной слайдер -->
+              <p class="">
+                <label class="" for="price-min">От</label>
+                <input class="" type="number" min="0" name="price-min" id="price-min">
+              </p>
+              <p class="">
+                <label class="" for="price-max">До</label>
+                <input class="" type="number" min="1" name="price-max" id="price-max">
+              </p>
             </fieldset>
             <fieldset class="filter__fieldset">
-              <legend>Сетка:</legend>
-              <!-- и тут будет позднее -->
+              <legend class="filter__title">Сетка:</legend>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <input class="visible-hidden" type="radio" name="grid" value="adaptive" id="grid-adaptive" checked>
+                  <label class="filter__label filter__label--radio" for="grid-adaptive">Адаптивная</label>
+                </li>
+                <li class="filter__item">
+                  <input class="visible-hidden" type="radio" name="grid" value="rubber" id="grid-fixed" checked>
+                  <label class="filter__label filter__label--radio" for="grid-fixed">Фиксированная</label>
+                </li>
+                <li class="filter__item">
+                  <input class="visible-hidden" type="radio" name="grid" value="rubber" id="grid-rubber" checked>
+                  <label class="filter__label filter__label--radio" for="grid-rubber">Резиновая</label>
+                </li>
+              </ul>
             </fieldset>
             <fieldset class="filter__fieldset">
-              <legend>Особенности:</legend>
-              <!-- и тут будет позднее -->
+              <legend class="filter__title">Особенности:</legend>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <input class="visible-hidden" type="checkbox" name="feature-slider" id="feature-slider" checked>
+                  <label class="filter__label filter__label--checkbox" for="feature-slider">Слайдер</label>
+                </li>
+                <li class="filter__item">
+                  <input class="visible-hidden" type="checkbox" name="feature-advantage" id="feature-advantage">
+                  <label class="filter__label filter__label--checkbox" for="feature-advantage">Блок преимуществ</label>
+                </li>
+                <li class="filter__item">
+                  <input class="visible-hidden" type="checkbox" name="feature-news" id="feature-news" checked>
+                  <label class="filter__label filter__label--checkbox" for="feature-news">Новости</label>
+                </li>
+                <li class="filter__item">
+                  <input class="visible-hidden" type="checkbox" name="feature-gallery" id="feature-gallery">
+                  <label class="filter__label filter__label--checkbox" for="feature-gallery">Галерея</label>
+                </li>
+                <li class="filter__item">
+                  <input class="visible-hidden" type="checkbox" name="feature-basket" id="feature-basket">
+                  <label class="filter__label filter__label--checkbox" for="feature-basket">Корзина</label>
+                </li>
+              </ul>
             </fieldset>
             <button class="btn filter__btn" type="submit">Показать</button>
           </form>
